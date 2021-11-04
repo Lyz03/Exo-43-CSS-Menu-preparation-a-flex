@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color, 200ms;
+}
+
+.navbar a:hover {
+    border-bottom-color: white;
+}
+
+.logo_menu {
+    display: none;
+}
+
+@media screen and (max-width:570px) {
+
+    .navbar {
+        width: auto;
+    }
+
+    .navbar a {
+        text-align: left;
+        display: block;
+    }
+
+    .logo_menu {
+        display: block;
+        float: left;
+        padding: 1rem;
+        color: white;
+    }
+
+}
